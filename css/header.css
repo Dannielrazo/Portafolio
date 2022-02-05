@@ -1,0 +1,91 @@
+.header {
+  padding-block-start: 0.5rem;
+  padding-block-end: 0.5rem;
+  padding-inline-start: 1.375rem;
+  padding-inline-end: 1.375rem;
+  position: sticky;
+  top: 0;
+  color: var(--secondary);
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+a.logo-link {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.header .logo {
+  font: var(--headline4);
+}
+
+.panel {
+  position: fixed;
+  top: 4.5rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  inline-size: 100%;
+  background-color: rgba(34, 34, 34, 0.85);
+  transition: transform 0.3s ease;
+  transform: translate(0, 110%);
+}
+
+.panel.is-active {
+  transform: translate(0, 0);
+}
+
+.panel .navigation {
+  background-color: var(--white);
+  padding-block-start: 2rem;
+  padding-block-end: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navigation a {
+  font: var(--body1Bold);
+  color: var(--secondary);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a.is-active {
+  color: var(--primary);
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: var(--primary) !important;
+}
+@media screen and (min-width: 768px) {
+  #hamburguer {
+    display: none;
+  }
+
+  .header {
+    padding-inline-start: 5.5625rem;
+    padding-inline-end: 5.5625rem;
+    padding-block-start: 0;
+    padding-block-end: 0;
+  }
+
+  .panel {
+    position: static;
+    transform: none;
+    flex: 0;
+  }
+
+  .panel .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navigation a {
+    font: var(--body2Bold);
+  }
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Daniel Razo">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css" />
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Portafolio</title>
+</head>
+
+<body>
+
+  <div class="sticky">
+    <header class="header">
+      <a href="#" class="logo-link">
+        <h1 class="logo">Daniel Razo</h1>
+      </a>
+      <button id="hamburguer" class="panel-btn hamburger hamburger--spin" type="button" aria-label="Menu de navegación">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <aside class="panel">
+        <nav class="navigation">
+          <a class="is-active" href="#">Hola</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </aside>
+    </header>
+  </div>
+  <div class="wrapper">
+    <section class="hero">
+      <img src="./images/img-1.png" alt="Foto de perfil de Daniel Razo" width="64" height="64" />
+      <div class="hero-title" id="hola">
+        <h1>Daniel Razo</h1>
+        <h2>
+          Soy un Frontend, centrado en la creación de productos digitales
+          durante los últimos 3 años.
+        </h2>
+      </div>
+      <p class="hero-description">
+        Me encanta centrarme en los detalles de las experiencias de nuevos
+        productos con una implementación en código perfecta. Pero los grandes
+        productos no comienzan ahí, comienzan con una sólida colaboración con
+        los compañeros de equipo de investigación, ingeniería y productos para
+        comprender los problemas y las circunstancias de los clientes.
+      </p>
+      <button class="button is-primary"> 
+        <a class="Cv" download="Cv" href="./images/cv.pdf">Descargar currículum </a>
+      </button>
+  </div>
+
+  <main class="main" id="proyectos">
+    <div class="project-container">
+      <section class="project">
+        <div class="project-img">
+          <img src="./images/iphone-2.png" width="315" height="447" alt="Imágen del proyecto Netnet" />
+        </div>
+        <div class="project-content">
+          <h3>Netnet</h3>
+          <p>
+            Netnet es una de las plataformas de entretenimiento con más
+            ranking a nivel mundial y detrás de las películas y series que nos
+            ofrece, hay un diseño con el que está estructurada...
+          </p>
+          <div class="project-buttons">
+            <button class="button is-primary">Ver código</button>
+            <button class="button is-secondary">Ver proyecto</button>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="project-img">
+          <img src="./images/iphone-3.png" width="315" height="447" alt="Imágen del proyecto Instantanea" />
+        </div>
+        <div class="project-content">
+          <h3>Instantanea</h3>
+          <p>
+            Aplicación y red social propiedad de Facebook, cuya función
+            principal es poder compartir fotografías y vídeos con otros
+            usuarios.
+          </p>
+          <div class="project-buttons">
+            <button class="button is-primary">Ver código</button>
+            <button class="button is-secondary">Ver proyecto</button>
+          </div>
+        </div>
+      </section>
+      <section class="project">
+        <div class="project-img">
+          <img src="./images/iphone-1.png" width="315" height="447" alt="Imágen del proyecto Fotos" />
+        </div>
+        <div class="project-content">
+          <h3>Fotos</h3>
+          <p>
+            Encuentra tus fotos más rápido. Tus fotos se organizan y permiten
+            búsquedas en función de los lugares y las cosas que muestran, sin
+            necesidad de etiquetarlas.
+          </p>
+          <div class="project-buttons">
+            <button class="button is-primary">Ver código</button>
+            <button class="button is-secondary">Ver proyecto</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="testimonio-container" id="testimonios">
+      <div class="wrapper">
+        <article class="experiencia">
+          <h3>Experiencia</h3>
+          <p>Tengo más de 3 años de experiencia en Frontend.</p>
+        </article>
+        <article class="testimonio">
+          <h3>Bellweet</h3>
+          <h4>Frontend - 2018</h4>
+          <p>
+            Encuentra lo mejor de Niko, con productos nuevos cada semana y disfruta del envío gratis. 
+            ¡Únete a nosotros! y accede como miembro a productos y beneficios exclusivos.
+          </p>
+        </article>
+        <article class="testimonio">
+          <h3>Telmex</h3>
+          <h4>Instalador de telmex - 2020</h4>
+          <p>
+            Diseño y optimización de red de fibra óptica para implementación de tecnologías: 
+            GPON, Metro Ethernet, DWDM, SDH; para atender servicios de voz, datos, sitios celulares, 
+            redes de transporte. Mejora de procesos y relación con áreas dependientes de Ingeniería de Fibra Óptica.
+          </p>
+        </article>
+        <article class="testimonio">
+          <h3>Frelancer</h3>
+          <h4>Frontend - 2022</h4>
+          <p>
+            Netnet es una de las plataformas de entretenimiento con más
+            ranking a nivel mundial y detrás de las películas y series que nos
+            ofrece, hay un diseño con el que está estructurada y organizada
+            cada sección de la plataforma.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-container">
+    <div class="wrapper">
+      <footer class="footer" id="contacto">
+        <div class="contact">
+          <p>
+            ¿Quieres trabajar conmigo? <br />
+            ¡Hazme ping!
+          </p>
+          <a href="mailto:daniel.razosc@gmail.com">daniel.razosc@gmail.com</a>
+        </div>
+    </div>
+    </footer>
+  </div>
+  <div class="page-footer">
+    <a href="#" class="logo-link">
+      <h1 class="logo">Daniel Razo</h1>
+    </a>
+    <div class="social">
+      <a class="social-link" href="https://github.com/Dannielrazo" target="_blank">Github</a>
+      <a class="social-link" href="https://www.linkedin.com/in/dannielrazo/" target="_blank">Linkedin</a>
+      <a class="social-link" href="https://twitter.com/Danniel_razo" target="_blank">twitter</a>
+    </div>
+  </div>
+
+  <script src=".js/app.js" type="module"></script>
+</body>
+
+</html>
